@@ -47,8 +47,8 @@ head(expr_data)
 
 
 
-```R
 
+```R
 data_use <- expr_data[, c(4, 6:ncol(expr_data))]
 
 
@@ -58,6 +58,7 @@ d7 <- c("D7_C20", "D7_C26")
 w2 <- c("W2_C22", "W2_C23")
 w4 <- c("W4_C24", "W4_C25")
 ```
+
 
 
 ```R
@@ -89,18 +90,18 @@ data_merged <- cbind(data_merged, w4 = apply(data_use[, match(w4, names(data_use
 
 
 ```R
-dim(data_use)
+print('Number of rows')
+print(nrow(data_use))
+
+print('Number of columns')
+print(ncol(data_use))
 ```
 
-
-<style>
-.list-inline {list-style: none; margin:0; padding: 0}
-.list-inline>li {display: inline-block}
-.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
-</style>
-<ol class=list-inline><li>17713</li><li>11</li></ol>
-
-
+    [1] "Number of rows"
+    [1] 25746
+    [1] "Number of columns"
+    [1] 11
+    
 
 
 ```R
@@ -128,18 +129,18 @@ head(data_merged)
 
 
 ```R
-dim(data_merged)
+print('Number of rows')
+print(nrow(data_merged))
+
+print('Number of columns')
+print(ncol(data_merged))
 ```
 
-
-<style>
-.list-inline {list-style: none; margin:0; padding: 0}
-.list-inline>li {display: inline-block}
-.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
-</style>
-<ol class=list-inline><li>17713</li><li>6</li></ol>
-
-
+    [1] "Number of rows"
+    [1] 17713
+    [1] "Number of columns"
+    [1] 6
+    
 
 
 ```R
@@ -223,6 +224,23 @@ for (iLbl in 1:length(unique_lbls)) {
 }
 ```
 
+     mergeCloseModules: Merging modules whose distance is less than 0.5
+       multiSetMEs: Calculating module MEs.
+         Working on set 1 ...
+         moduleEigengenes: Calculating 61 module eigengenes in given set.
+       multiSetMEs: Calculating module MEs.
+         Working on set 1 ...
+         moduleEigengenes: Calculating 14 module eigengenes in given set.
+       multiSetMEs: Calculating module MEs.
+         Working on set 1 ...
+         moduleEigengenes: Calculating 9 module eigengenes in given set.
+       multiSetMEs: Calculating module MEs.
+         Working on set 1 ...
+         moduleEigengenes: Calculating 8 module eigengenes in given set.
+       Calculating new MEs...
+       multiSetMEs: Calculating module MEs.
+         Working on set 1 ...
+         moduleEigengenes: Calculating 8 module eigengenes in given set.
     
 
 
