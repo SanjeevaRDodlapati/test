@@ -48,28 +48,7 @@ head(expr_data)
 
 
 ```R
-names = c(names(expr_data))
-```
 
-
-```R
-names
-```
-
-
-<style>
-.list-inline {list-style: square ; margin:0; padding: 0}
-.list-inline>li {display: inline}
-.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
-</style>
-
-<ol class=list-inline><li>'seqid'</li><li>'start'</li><li>'end'</li><li>'gene_symbol'</li><li>'gene_id'</li><li>'Uninjured_C15'</li><li>'Uninjured_C16'</li><li>'D3_C17'</li><li>'D3_C18'</li><li>'D7_C20'</li><li>'W2_C22'</li><li>'W2_C23'</li><li>'W4_C24'</li><li>'W4_C25'</li><li>'D7_C26'</li></ol>
-
-
-
-
-```R
-c(names(expr_data)[6:ncol(expr_data)])
 data_use <- expr_data[, c(4, 6:ncol(expr_data))]
 
 
@@ -79,16 +58,6 @@ d7 <- c("D7_C20", "D7_C26")
 w2 <- c("W2_C22", "W2_C23")
 w4 <- c("W4_C24", "W4_C25")
 ```
-
-
-<style>
-.list-inline {list-style: none; margin:0; padding: 0}
-.list-inline>li {display: inline-block}
-.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
-</style>
-<ol class=list-inline><li>'Uninjured_C15'</li><li>'Uninjured_C16'</li><li>'D3_C17'</li><li>'D3_C18'</li><li>'D7_C20'</li><li>'W2_C22'</li><li>'W2_C23'</li><li>'W4_C24'</li><li>'W4_C25'</li><li>'D7_C26'</li></ol>
-
-
 
 
 ```R
