@@ -1,3 +1,7 @@
+# Mouse Cardiac RNA-seq Moudule Analysis
+__Authtor:__ Sanjeeva Reddy Dodlapati
+__Date:__ Dec 4, 2020
+
 ```R
 library(WGCNA)
 library(pheatmap)
