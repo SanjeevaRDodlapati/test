@@ -48,7 +48,12 @@ head(expr_data)
 
 
 ```R
-names(expr_data)
+names = c(names(expr_data))
+```
+
+
+```R
+names
 ```
 
 
@@ -63,7 +68,7 @@ names(expr_data)
 
 
 ```R
-names(expr_data)[6:ncol(expr_data)]
+c(names(expr_data)[6:ncol(expr_data)])
 data_use <- expr_data[, c(4, 6:ncol(expr_data))]
 
 
@@ -248,28 +253,11 @@ for (iLbl in 1:length(unique_lbls)) {
 }
 ```
 
-     mergeCloseModules: Merging modules whose distance is less than 0.5
-       multiSetMEs: Calculating module MEs.
-         Working on set 1 ...
-         moduleEigengenes: Calculating 61 module eigengenes in given set.
-       multiSetMEs: Calculating module MEs.
-         Working on set 1 ...
-         moduleEigengenes: Calculating 14 module eigengenes in given set.
-       multiSetMEs: Calculating module MEs.
-         Working on set 1 ...
-         moduleEigengenes: Calculating 9 module eigengenes in given set.
-       multiSetMEs: Calculating module MEs.
-         Working on set 1 ...
-         moduleEigengenes: Calculating 8 module eigengenes in given set.
-       Calculating new MEs...
-       multiSetMEs: Calculating module MEs.
-         Working on set 1 ...
-         moduleEigengenes: Calculating 8 module eigengenes in given set.
     
 
 
     
-![png](output_10_1.png)
+![png](output_11_1.png)
     
 
 
