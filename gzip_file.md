@@ -1,22 +1,26 @@
 ### View contents of gzip files on linux withouth unzipping.
 
-```bash
+```console
 zcat file.gz | head -n 10
 ```
+
 ```console
  gzip -cd file.gz | head
  ```
  
- ```
+```console
  zcat file.gz | tail -10
 ```
-```
+
+```console
 zcat file.gz | wc -l
 ```
-```
+
+```console
 zmore file.gz
 ```
-```
+
+```console
 zless file.gz
 ```
 
