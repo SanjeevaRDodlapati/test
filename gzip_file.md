@@ -1,5 +1,24 @@
 ### View contents of gzip files on linux withouth unzipping.
 
+```
+zcat file.gz | head -n 10
+```
+```
+ gzip -cd file.gz | head
+ ```
+ 
+ ```
+ zcat file.gz | tail -10
+```
+```
+zcat file.gz | wc -l
+```
+```
+zmore file.gz
+```
+```
+zless file.gz
+```
 
 
 ### Reading gzip files in python without unzipping.
