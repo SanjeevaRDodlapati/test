@@ -7,6 +7,31 @@ python --version
 which python3
 ```
 
+```console
+type python3
+```
+
+```console
+echo $PATH
+```
+##### setting python path in .bash_profile
+```console
+nano ~/.bash_profile
+```
+Add the path variable to .bash_profile
+```console
+PATH="enter python path here"
+```
+
+Aiasing python
+```console
+nano ~/.bash_profile
+alias python=python3
+alias pip=pip3
+```
+
+
+
 ### Installing multiple versions of python
 
 
