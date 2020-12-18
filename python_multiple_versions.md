@@ -44,6 +44,12 @@ python
 >>> import sys
 >>> sys.executable
 ```
+Inspecting installed package path
+```console
+pip show package_name
+pip show pandas
+```
+make sure the path of the package from pip show pakcage output and sys.executable output pints to same locaton (path)
 
 
 ### Installing multiple versions of python
