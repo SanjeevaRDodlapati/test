@@ -4,7 +4,7 @@
 python --version
 ```
 ```console
-which python
+which python3
 ```
 
 ### Installing multiple versions of python
