@@ -38,6 +38,14 @@ type pip
 type pip3
 ```
 
+Checking executable python
+```console
+python 
+>>> import sys
+>>> sys.executable
+```
+
+
 ### Installing multiple versions of python
 
 
