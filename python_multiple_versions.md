@@ -30,7 +30,13 @@ alias python=python3
 alias pip=pip3
 ```
 
-
+Check
+```console
+type python
+type python3
+type pip
+type pip3
+```
 
 ### Installing multiple versions of python
 
