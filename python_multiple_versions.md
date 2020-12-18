@@ -20,7 +20,7 @@ nano ~/.bash_profile
 ```
 Add the path variable to .bash_profile
 ```console
-PATH="enter python path here"
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 ```
 
 Aiasing python
