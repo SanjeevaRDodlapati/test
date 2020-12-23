@@ -15,6 +15,10 @@ selecting columns
 ```python
 df1 = df.reindex(columns=filtered_columns)
 ```
+selecting index-wise
+```python
+df.reindex(new_index, fill_value=0)
+```
 DataFrame.reindex supports two calling conventions
 
 (index=index_labels, columns=column_labels, ...)
