@@ -1,6 +1,6 @@
 ## Useful pandas commands
 
-Split string with separator
+### Split string with separator
 ```python
 df.column_name.str.split(pat='', expand=True) # pat = ' ' or '/' or ',' etc.
 df.column_name.str.split(n=2, expand=True)
@@ -15,7 +15,7 @@ Slicing string vlaues of pandas dataframe
 df.column_name.str.[m:n]
 ```
 
-selecting columns
+### selecting columns
 ```python
 df1 = df.reindex(columns=filtered_columns)
 ```
