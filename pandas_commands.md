@@ -15,7 +15,7 @@ Slicing string vlaues of pandas dataframe
 df.column_name.str.[m:n]
 ```
 
-### selecting columns
+### Slicing/selecting dataframe
 ```python
 df1 = df.reindex(columns=filtered_columns)
 ```
