@@ -17,3 +17,8 @@ re.sub('[^A-Za-z0-9]+', '', tissue)
 ```python
 df[col] = df[col].apply(lambda x: re.sub('[^A-Za-z0-9\.]+', '', str(x)))
 ```
+
+String split on multiple delimiters:
+```python
+re.split('; |, |\*|\n',a)
+```
