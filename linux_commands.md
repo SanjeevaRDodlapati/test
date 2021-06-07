@@ -17,6 +17,10 @@ or
 ```console
 du -ch folder_path | grep total
 ```
+To display size of all the folders in the current directory:
+```
+du -shc *
+```
 
 To get more access previleges use (requires user password)
 ```console
