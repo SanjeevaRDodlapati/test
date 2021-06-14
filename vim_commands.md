@@ -1,4 +1,4 @@
-## Vim Commnads
+## Vim Commnads text
 
 search and replace
 ```
