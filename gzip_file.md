@@ -1,5 +1,5 @@
 ### Unzip gzip file (keep original file)
-```
+```console
 $ gzip -dk file
 ```
 
