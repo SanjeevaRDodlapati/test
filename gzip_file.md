@@ -1,3 +1,8 @@
+### Unzip gzip file (keep original file)
+```
+$ gzip -dk file
+```
+
 ### View contents of gzip files on linux withouth unzipping.
 
 ```console
