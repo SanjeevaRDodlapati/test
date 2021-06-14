@@ -1,6 +1,6 @@
 ### Unzip gzip file (keep original file)
 ```console
-$ gzip -dk file
+gzip -dk file
 ```
 
 ### View contents of gzip files on linux withouth unzipping.
