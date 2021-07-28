@@ -1,3 +1,28 @@
+
+# Conda envs
+```
+conda create --name py39 python=3.9
+```
+### Removing conda env
+```
+conda env remove --name env_name
+```
+List packages installed
+```
+conda list
+```
+```
+pip list
+```
+
+
+
+
+
+
+
+
+
 # Python virtual envs through pipenv
 
 ```
