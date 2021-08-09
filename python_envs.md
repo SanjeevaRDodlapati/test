@@ -18,11 +18,6 @@ pip list
 
 
 
-
-
-
-
-
 # Python virtual envs through pipenv
 
 ```
@@ -70,5 +65,12 @@ pipenv install
 To see path to env:
 ```
 pipenv --venv
+```
+
+
+
+# Python virtual environment
+```
+python3 -m venv env_name
 ```
 
