@@ -19,34 +19,36 @@ crun -p ~/envs/fugep python setup.py install
 ```
 
 
-
-## Conda Envs:
-Check existing envs
+### RStudio on turing/wahab
 ```
-conda info --envs # or
-conda env list
-```
-
-Create env
-```
-conda create --name myenv
+salloc --job-name=rstudio
+enable_lmod
+module load container_env rstudio
+crun rstudio
 ```
 
-Create with specific python version
- ```
- conda create -n myenv python=3.6 #or
- coda create -n myenv python
- ```
- ```
- conda activate myenv
- ```
- 
- Remove/deactivate env
- ```
- conda deactivate
- ```
- 
- ```
- conda env remove -n myenv
- ```
+### eclipse on cluster
+```
+salloc -p gpu -c 8 --gres gpu:1 --job-name=eclipse
+enable_lmod
+module load container_env pytorch-gpu/1.9.0
+crun -p ~/envs/deepTools eclipse
+```
+
+### install module to ~/envs/deepTools
+```
+crun    -p ~/envs/deepTools pip install XYZ
+```
+
+### Run Jupyter Lab on Cluster
+##### for more check the email from Min on Sep. 17, 2021 (jsun)
+##### crun -p ~/envs/deepTools jupyter lab --ip=0.0.0.0 --port=A_RANDOM_PORT_NUMBER
+##### For the port number please pick a random number larger than 10000, and less than 20000
+```
+crun -p ~/envs/deepTools jupyter lab --notebook-dir=/scratch-lustre/ml-csm --ip=0.0.0.0 --port=11523
+
+```
+
+
+
  
