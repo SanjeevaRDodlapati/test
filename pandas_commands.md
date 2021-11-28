@@ -45,11 +45,15 @@ DataFrame.reindex supports two calling conventions
 14. df.groupby(['col1'])['col2'].agg(custom aggregate function) -  df.groupby(['col1'])['col2'].agg(np.std/custfunc)
 15. df.groupby(['col1', col2])[['col3', col4]].agg(fun) - double brackets around second list of columns - Returns HEIRARCHICAL index
 16. df.groupby(['col1', col2])[['col3', col4]].agg(fun).reset_index() - resets index back to original
-17. df.melt(id-vars=col1, var_name=col2, value_name=col3) - keeps col1 and creates new columns with rest of the data
-18. 
-19. 
-20. 
-21.  
-22. 
+17. df.melt(id_vars=col1, var_name=col2, value_name=col3) - keeps col1 and creates new columns with rest of the data
+18. df.melt(id_vars=[col1, col2 col3], var_name=col4, value_name=col5)
+19. piping data in pandas similar to R (check for examples) (https://www.youtube.com/watch?v=5rNu16O3YNE around 1.02h)
+20. df['col'].str.split('_', expand=True) - returns dataframe of splits
+21. __check pd.pivot() vs pd.pivot_table()__
+22. _df.pivot_table(id_vars=[col1, col2 col3], var_name=col4, value_name=col5)_ - Reverse of melt()
 23. 
 24. 
+25.  
+26. 
+27. 
+28. 
