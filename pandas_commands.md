@@ -48,12 +48,16 @@ DataFrame.reindex supports two calling conventions
 17. df.melt(id_vars=col1, var_name=col2, value_name=col3) - keeps col1 and creates new columns with rest of the data
 18. df.melt(id_vars=[col1, col2 col3], var_name=col4, value_name=col5)
 19. piping data in pandas similar to R (check for examples) (https://www.youtube.com/watch?v=5rNu16O3YNE around 1.02h)
-20. df['col'].str.split('_', expand=True) - returns dataframe of splits
-21. __check pd.pivot() vs pd.pivot_table()__
-22. _df.pivot_table(id_vars=[col1, col2 col3], var_name=col4, value_name=col5)_ - Reverse of melt()
-23. 
-24. 
-25.  
-26. 
+20. df['col'].str.split('_', expand=True) - returns dataframe of splits as columns
+21. df['col'].str.split('_').str.get(0) - gives first column of splits 
+22. __check pd.pivot() vs pd.pivot_table()__
+23. _df.pivot_table(index=[col1, col2 col3], columns=col4, values=col5).reset_index()_ - Reverse of melt()
+24. df['col'].apply(my_func) - applies function to all the values of the col
+25. df['col'].apply(my_func, **kwargs)
+26. df.apply(my_func) - applies the function column-wise
 27. 
 28. 
+29.  
+30. 
+31. 
+32. 
