@@ -15,5 +15,8 @@ a = np.array(expression_data)
 1. a.flags
 1. a.ravel()
 1. a.T
+1. a.argmax() - gives index of max
+1. a.flatten() - copy, changes don't affect original array
+1. a.ravel() = gives a view of original, changes will affect original array
 1. 
 
