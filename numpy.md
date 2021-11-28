@@ -19,5 +19,6 @@ a = np.array(expression_data)
 1. a.flatten() - copy, changes don't affect original array
 1. a.ravel() - gives a view of original, changes will affect original array
 1. np.argsort(a) - returns indexes of sorted array
-2. 
+2. np.vectorize(obj)
+3. 
 
