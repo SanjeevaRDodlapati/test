@@ -51,4 +51,38 @@ crun -p ~/envs/deepTools jupyter lab --notebook-dir=/scratch-lustre/ml-csm --ip=
 
 
 
+Login to the cluster with remote desktop
+Get a compute node
+ 
+```
+salloc -c 4
+
+salloc -c 4 -p gpu --gres gpu:1 # if you need gpu
+```
+ 
+
+Load modules:
+ 
+```
+enable_lmod
+
+module load container_env tensorflow-gpu/2.4.1
+```
+ 
+
+Run pycharm with the crun prefix include the environment , for example:
+ 
+```
+crun -p ~/envs/pp pycharm
+```
+ 
+
+When pycharm is launched, it will ask you to pick a python interpreter, you need to use following steps:
+Previously configured interpreter
+Click "…" on the right
+Click "Virtualenv Environment" on the left side of the new dialog window
+Click "…" on the right
+Just type in your environment concat with "/bin/python", like this:
+/home/mdong003/envs/pp/bin/python
+
  
