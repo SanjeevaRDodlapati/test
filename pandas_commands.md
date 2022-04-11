@@ -1,5 +1,10 @@
 ## Useful pandas commands
 
+
+### Join/merge df, df1
+```python
+df.merge(df1, left_on=['x','y'], right_on=['x','y'], how='right')
+```
 ### Split string with separator
 ```python
 df.column_name.str.split(pat='', expand=True) # pat = ' ' or '/' or ',' etc.
