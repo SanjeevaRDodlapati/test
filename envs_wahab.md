@@ -10,12 +10,21 @@ module load container_env pytorch-gpu/1.3.1 #or any other environment that Min b
 ```
 #### Step 3: Create an environment using the following command
 ```
-crun -c -p ~/envs/fugep
+crun -c -p ~/envs/fugep # python env
 ```
-
 #### Step 4: Install fugep in the environment by running the following command within cloned fugep directory
 ```
 crun -p ~/envs/fugep python setup.py install
+```
+### Conda env
+Create conda env
+```
+crun -c -s -p ~/envs/new_env  # conda env
+```
+Install package:
+
+```
+crun -p ~/envs/new_env conda install xxxxxx
 ```
 
 
