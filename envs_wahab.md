@@ -60,7 +60,7 @@ crun -p ~/envs/deepTools jupyter lab --notebook-dir=/scratch-lustre/ml-csm --ip=
 
 
 
-Login to the cluster with remote desktop
+### Login to the cluster with remote desktop
 Get a compute node
  
 ```
@@ -79,9 +79,7 @@ enable_lmod
 
 module load container_env tensorflow-gpu/2.4.1
 ```
- 
-
-Run pycharm with the crun prefix include the environment , for example:
+ ### Run pycharm with the crun prefix include the environment , for example:
  
 ```
 crun -p ~/envs/pp pycharm
@@ -98,6 +96,16 @@ Click "…" on the right
 
 Just type in your environment concat with "/bin/python", like this:
 /home/mdong003/envs/pp/bin/python
+
+
+### Run pycharm with existing conda env
+```
+crun -p ~/envs/conda_env pycharm
+
+Conda executable: /opt/micromamba/bin/conda
+
+Use existing environment: /home/sdodl001/envs/conda_env
+```
 
 ```
 salloc -c 4
