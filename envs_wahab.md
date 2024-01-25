@@ -108,9 +108,10 @@ Use existing environment: /home/sdodl001/envs/conda_env
 ```
 
 ```
-salloc -c 4
+salloc -c 8
 
-salloc -c 4 -p gpu --gres gpu:1 # if you need gpu
+salloc -c 8 -p gpu --gres gpu:1 # if you need gpu
+salloc -c 8 -p high-gpu-mem --gres gpu:1 # if you need gpu
 ```
 ```
 enable_lmod
