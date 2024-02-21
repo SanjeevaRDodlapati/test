@@ -39,6 +39,8 @@ crun rstudio
 ### eclipse on cluster
 ```
 salloc -p gpu -c 8 --gres gpu:1 --job-name=eclipse
+or
+salloc -p high-gpu-mem -c 8 --gres gpu:1
 enable_lmod
 module load container_env pytorch-gpu/1.9.0
 crun -p ~/envs/deepTools eclipse
