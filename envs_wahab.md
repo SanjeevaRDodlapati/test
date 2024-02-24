@@ -132,4 +132,24 @@ Click "…" on the right
 Just type in your environment concat with "/bin/python", like this:
 /home/mdong003/envs/pp/bin/python
 ```
+
+```
+# Loading modules prior to custom env
+
+### Graph_Mamba:
+module load container_env python3/2023.2-py310
+crun -p ~/envs/Graph_Mamba pycharm
+
+### hyena_dna
+module load container_env python3
+crun -p ~/envs/hyena_dna pycharm
+
+### mamba
+module load container_env tensorflow-gpu/2.12.0
+crun -p ~/envs/mamba pycharm
+
+### CpG_Mamba
+module load container_env python3/2023.2-py310
+crun -p ~/envs/CpG_Mamba pycharm
+```
  
