@@ -21,3 +21,8 @@ module load container_env pytorch-gpu/1.8.1
 
 crun.pytorch-gpu -p ~/envs/fugep python -u file.py
 ```
+
+```
+Run liftover
+~/liftOver/liftOver
+```
