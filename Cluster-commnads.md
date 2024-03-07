@@ -24,5 +24,5 @@ crun.pytorch-gpu -p ~/envs/fugep python -u file.py
 
 ```
 Run liftover
-~/liftOver/liftOver
+~/liftOver/liftOver source_file chain_file target_file unMapped
 ```
