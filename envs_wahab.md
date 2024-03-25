@@ -151,5 +151,11 @@ crun -p ~/envs/mamba pycharm
 ### CpG_Mamba
 module load container_env python3/2023.2-py310
 crun -p ~/envs/CpG_Mamba pycharm
+
+### caduceus
+module load container_env python3
+crun -p ~/envs/caduceus pycharm
+
+### mamba
 ```
  
