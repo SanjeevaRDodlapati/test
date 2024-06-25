@@ -12,6 +12,12 @@ module load container_env pytorch-gpu/1.3.1 #or any other environment that Min b
 ```
 crun -c -p ~/envs/fugep # python env
 ```
+
+##### create env with yml file
+```
+module load python3
+crun  mamba env create -p ~/envs/dart_eval -f environment.yml
+```
 #### Step 4: Install fugep in the environment by running the following command within cloned fugep directory
 ```
 crun -p ~/envs/fugep python setup.py install
