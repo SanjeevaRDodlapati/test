@@ -27,6 +27,11 @@ Create conda env
 ```
 crun -c -s -p ~/envs/new_env  # conda env
 ```
+
+Specify python version to use in conda env
+```
+crun -p ~/envs/chrombpnet_py39 conda install -y -c conda-forge python=3.9
+```
 Install package:
 
 ```
